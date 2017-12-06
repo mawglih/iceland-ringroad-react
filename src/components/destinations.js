@@ -12,9 +12,9 @@ class Destinations extends Component {
                     </h2>
                 </div>
                     <div className="row">
-                        <DestinationItem/>
-                        <DestinationItem/>
-                        <DestinationItem/>
+                        <DestinationItem class="card__side--back-1"/>
+                        <DestinationItem class="card__side--back-2"/>
+                        <DestinationItem class="card__side--back-3"/>
                     </div>
                 
             </div>
