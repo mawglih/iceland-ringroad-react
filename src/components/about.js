@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Data } from '../utils/data';
+import AboutItem from './about-item';
 
 class About extends Component {
     render() {
@@ -12,22 +14,16 @@ class About extends Component {
                     </div>
                     <div className="row">
                         <div className="col-1-of-2">
-                            <h3 className="heading-tertiary u-margin-bottom-small">You are going to fall in love with icelandic views</h3>
-                            <p className="paragraph">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, optio saepe natus eum dolor excepturi. Accusamus iste itaque atque dicta quo sed veritatis consequuntur non voluptate, dignissimos culpa laudantium mollitia.
-                            </p>
-                            <h3 className="heading-tertiary u-margin-bottom-small">Have an adventure of a lifetime</h3>
-                            <p className="paragraph">
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ut corporis et soluta vitae, nisi delectus, fuga quaerat hic nostrum rem fugit quas beatae consequatur sapiente doloribus quis perspiciatis modi? Heritatis consequuntur non voluptate, dignissimos culpa laudantium mollitia.
-                            </p>
-                                <a  className="btn-text" href="#">Learn more &rarr;</a>
+                            <AboutItem title={Data[4].title} text={Data[4].text} />
+                            <AboutItem title={Data[5].title} text={Data[5].text} />
+                            <a  className="btn-text" href="#">Learn more &rarr;</a>
                         </div>
                         <div className="col-1-of-2">
                             <div className="composition">
                                 <img src="./images/pic1.jpg" className="composition__photo composition__photo--p1" alt="photo1"/>
                                 <img src="./images/pic2.jpg" className="composition__photo composition__photo--p2" alt="photo2"/>
                                 <img src="./images/pic4.jpg" className="composition__photo composition__photo--p4" alt="photo4"/>
-                                <img src="./images/pic3.jpg" className="composition__photo composition__photo--p3" alt="photo3"/>
+                                <img src="./images/pic4.jpg" className="composition__photo composition__photo--p3" alt="photo3"/>
                             </div>
                         </div>
                     </div>

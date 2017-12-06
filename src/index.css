@@ -112,6 +112,19 @@ body {
   padding: 25rem 0;
   margin-top: -10vh; }
 
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(5, 60, 247, 0.6), rgba(5, 32, 123, 0.6)), url(./images/background2.jpg);
+  transform: skewY(-7deg);
+  margin-top: -8rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-destinations {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -9rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -193,10 +206,10 @@ body {
       top: 2rem; }
     .composition__photo--p3 {
       left: 40%;
-      top: 10rem; }
+      top: 7rem; }
     .composition__photo--p4 {
       left: 10%;
-      top: 7rem; }
+      top: 10rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #1a3db3;
       transform: scale(1.05) translateY(-0.5rem);
@@ -204,6 +217,30 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3; }
+  .feature-box__icon {
+    margin-bottom: .5rem;
+    background-image: linear-gradient(to right, #053cf7, #05207b);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
+.card-turning {
+  background-color: red;
+  height: 50rem;
+  transition: all .8s; }
+  .card-turning:hover {
+    transform: rotateY(180deg); }
 
 .header {
   height: 95vh;
