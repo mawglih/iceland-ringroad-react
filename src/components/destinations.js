@@ -12,11 +12,13 @@ class Destinations extends Component {
                     </h2>
                 </div>
                     <div className="row">
-                        <DestinationItem class="card__side--back-1"/>
-                        <DestinationItem class="card__side--back-2"/>
-                        <DestinationItem class="card__side--back-3"/>
+                        <DestinationItem class="1" title={Data[6].title} text={Data[6].text} details={Data[6].details}/>
+                        <DestinationItem class="2" title={Data[7].title} text={Data[7].text} details={Data[6].details}/>
+                        <DestinationItem class="3" title={Data[8].title} text={Data[8].text} details={Data[6].details}/>
                     </div>
-                
+                <div className="u-center-text u-margin-top-big">
+                    <a  className="btn btn-blue" href="#">Discover all destinations</a>
+                </div>
             </div>
         );
     }
