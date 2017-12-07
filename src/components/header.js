@@ -6,7 +6,7 @@ class Header extends Component {
         return(
             <header className="header">
                 <div className="header--logo-box">
-                    <img src="./logo-white.png" className="header--logo"/>
+                    <img src="./logo_zv.png" className="header--logo"/>
                 </div>
                 <div className="header-text-box">
                     <h1 className="heading-primary">
