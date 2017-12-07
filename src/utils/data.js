@@ -39,9 +39,28 @@ export const Data = [{
         details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At, enim in quo natus commodi, deleniti inventore laudantium atque qui officia, saepe voluptatibus voluptatum quos eligendi. Delectus ipsum  quo?'
     },
     {
+
         image: './images/pic1.jpg',
         title: 'Blue Lagoon',
         text: 'Popular spa destination featuring an outdoor lagoon with mineral-rich waters',
         details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At, enim in quo natus commodi, deleniti inventore laudantium atque qui officia, saepe voluptatibus voluptatum quos eligendi. Delectus ipsum  quo?'
+    },
+    {
+        caption: 'Anastasia-Sofia',
+        image: './images/portrait1.jpg',
+        text: 'My best trip ever',
+        details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At, enim in quo natus commodi, deleniti inventore laudantium atque qui officia, saepe voluptatibus voluptatum quos eligendi. Delectus ipsum  quo?'
+    },
+    {
+        caption: 'Andrew Max',
+        image: './images/portrait2.jpg',
+        text: 'Week of mountains, geysers and volcanoes',
+        details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. At, enim in quo natus commodi, deleniti inventore laudantium atque qui officia, saepe voluptatibus voluptatum quos eligendi. Delectus ipsum  quo?'
+    },
+    {
+        video1: './images/video1.mp4',
+        video2: './images/video1.webm',
+        video3: './images/video2.mp4',
+        video4: './images/video2.webm'
     }
 ];
