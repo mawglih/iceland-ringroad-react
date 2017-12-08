@@ -5,6 +5,7 @@ import Features from './components/features';
 import Destinations from './components/destinations';
 import Testimonials from './components/testimonials';
 import Booking from './components/booking';
+import Footer from './components/footer';
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
             <Destinations / >
             <Testimonials / >
             <Booking />
+            <Footer/>
             </div>
         );
     }
