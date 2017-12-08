@@ -6,7 +6,7 @@ class Destinations extends Component {
     render(){
         return(
             <div className="section-destinations">
-                <div className="u-center-text u-margin-bottom-big">
+                <div className="u-margin-bottom-small">
                     <h2 className="heading-secondary">
                         Most popular destinations
                     </h2>
