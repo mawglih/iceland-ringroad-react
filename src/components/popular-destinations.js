@@ -5,7 +5,9 @@ class PopularDestinations extends Component {
     render() {
         return(
             <div className="section-popular-destinations">
-                <PopularDestinationItem />
+                <div className="row">
+                    <PopularDestinationItem />
+                </div>
             </div>
         )
     }
