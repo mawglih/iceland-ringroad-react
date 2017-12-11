@@ -1,11 +1,23 @@
 .book {
     background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(./images/pic4.jpg);
     background-size: cover;
-    height: 50rem;
+  
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    @include responsive(tab-land) {
+        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%), url(./images/pic4.jpg);
+    }
+    @include responsive(tab-port) {
+        background-image: linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%), url(./images/pic4.jpg);
+    }
     &__form {
         width: 50%;
         padding: 6rem;
+        @include responsive(tab-land) {
+            width: 65%;
+        }
+        @include responsive(tab-port) {
+            width: 100%;
+        }
     }
 }

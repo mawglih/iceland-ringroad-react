@@ -7,19 +7,21 @@ import Testimonials from './components/testimonials';
 import Booking from './components/booking';
 import Footer from './components/footer';
 import Navigation  from './components/navigation';
+import PopUp from './components/popup';
 import './App.css';
 
 class App extends Component {
     render() {
         return ( <div>
             <Navigation/>
-            <Header / >
-            <About / >
-            <Features / >
-            <Destinations / >
-            <Testimonials / >
+            <Header />
+            <About />
+            <Features />
+            <Destinations />
+            <Testimonials />
             <Booking />
             <Footer/>
+            <PopUp />
             </div>
         );
     }

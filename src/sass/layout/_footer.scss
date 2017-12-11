@@ -2,9 +2,15 @@
     background-color: $color-grey-dark-3;
     padding: 3rem 0;
     font-size: 1.4rem;
+    @include responsive(tab-port) {
+        padding: 8rem 0;
+    }
     &__logo-box {
         text-align: center;
         margin-bottom:3rem;
+        @include responsive(tab-port) {
+            margin-bottom:6rem;
+        }
     }
     &__logo {
         width: 10rem;
@@ -14,6 +20,10 @@
         border-top: 1px solid $color-grey-light-2;
         padding-top: 2rem;
         display: inline-block;
+        @include responsive(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
     }
     &__list {
         list-style: none;
@@ -46,5 +56,10 @@
         display: inline-block;
         color: $color-grey-light-1;
         border-top: 1px solid $color-grey-light-2;
+        @include responsive(tab-port) {
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
     }
 }

@@ -13,7 +13,7 @@ class Header extends Component {
                         <span className="heading-primary--main">Discover</span>
                         <span className="heading-primary--sub">the ring road</span>
                     </h1>
-                    <a href="#" className="btn btn-white btn-animated">Start discovery</a> 
+                    <a href="#section-destinations" className="btn btn-white btn-animated">Start discovery</a> 
                 </div>                  
             </header>
         );

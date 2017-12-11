@@ -5,8 +5,8 @@ import DestinationItem from './destination-item';
 class Destinations extends Component {
     render(){
         return(
-            <div className="section-destinations">
-                <div className="u-margin-bottom-small">
+            <div className="section-destinations" id="section-destinations" >
+                <div className="u-margin-bottom-small u-center-text">
                     <h2 className="heading-secondary">
                         Most popular destinations
                     </h2>

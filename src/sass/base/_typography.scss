@@ -19,6 +19,10 @@ body {
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-in;
+        @include responsive(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
         /* animation-delay: 1s; */
 
     }
@@ -42,6 +46,12 @@ body {
     color:transparent;
     transition: all .2s;
     letter-spacing: 2px;
+    @include responsive(tab-port) {
+        font-size: 3rem;
+    }
+    @include responsive(tab-port) {
+        font-size: 2.5rem;
+    }
  
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

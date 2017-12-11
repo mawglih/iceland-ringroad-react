@@ -20,7 +20,7 @@ export default (props) => {
                         <div className="card__info-box">
                             <p className={`card__info-box-details-${props.class}`}>{props.details}</p>
                         </div>
-                        <a href="#" className="btn btn-white">Add to trip</a>
+                        <a href="#popup" className="btn btn-white">Add to trip</a>
                     </div>
                 </div>
             </div>
