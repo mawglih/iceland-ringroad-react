@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Data } from '../utils/data';
 import DestinationItem from './destination-item';
+import { Link } from 'react-router-dom';
 
 class Destinations extends Component {
     render(){
@@ -17,7 +18,8 @@ class Destinations extends Component {
                         <DestinationItem class="3" title={Data[8].title} text={Data[8].text} details={Data[6].details}/>
                     </div>
                 <div className="u-center-text u-margin-top-big">
-                    <a  className="btn btn-blue" href="#">Discover all destinations</a>
+                <Link to="/popular-destinations" className="btn-text">Discover all destinations &rarr;</Link>
+                     
                 </div>
             </div>
         );

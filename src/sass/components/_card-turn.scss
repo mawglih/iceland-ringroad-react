@@ -29,6 +29,24 @@
             &-3 {
                 background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
             }
+            &-index-0 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            &-index-1 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+            &-index-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+            &-index-3 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            &-index-4 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+            &-index-5 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
         }
     }
     &:hover &__side--front {
@@ -40,7 +58,7 @@
     //Front side styling
     &__picture {
         background-size: cover;
-        height: 23rem;
+        height: 30rem;
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -55,13 +73,25 @@
         &-3 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(./images/pic3.jpg);
         }
+        &-index-0 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(./images/is-web/rej1.jpg);
+        }
+        &-index-1 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(./images/is-web/bl1.jpg);
+        }
+        &-index-2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(./images/is-web/east_main-road.jpg);
+        }
+        &-index-3 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(./images/is-web/east_main-road2.jpg);
+        }
     }
     &__heading {
         font-size: 2.8rem;
         font-weight: 300;
         color: $color-white;
         position: absolute;
-        top: 12rem;
+        top: 10rem;
         right: 2rem;
         text-align: right;
         width: 75%;
@@ -78,6 +108,18 @@
         }
         &-3 {
             background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+        }
+        &-index-0 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+        &-index-1 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+        }
+        &-index-2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+        }
+        &-index-3 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
         }
     }
     &__detail {
@@ -111,19 +153,14 @@
             height: auto;
             position: relative;
             box-shadow: none;
-            
-            
             &--back {
                 transform: rotateY(0);
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-                
             }
         }
         &:hover &__side--front {
             transform: rotateY(0);
         }
-        
-     
         //Back side styling
         &__cta {
             position: relative;
