@@ -9,7 +9,7 @@ import { addToTrip } from '../actions';
      }
 
      onAddTrip(item) {
-         this.props.addToTrip();
+         this.props.addToTrip(item);
      }
      render() {
         return(
