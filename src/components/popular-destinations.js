@@ -8,7 +8,7 @@ class PopularDestinations extends Component {
             <div className="section-popular-destinations">
                 <div className="row">
                 {DestinationsData.map((data) => {
-                    return  <PopularDestinationItem class={data.id} image={data.image} title={data.name} text={data.textShort} details={data.textLong} key={data.id} />
+                    return  <PopularDestinationItem  data={data} class={data.id} image={data.image} title={data.name} text={data.textShort} details={data.textLong} key={data.id} />
                 })
                 }
                     
