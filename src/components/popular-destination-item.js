@@ -5,11 +5,11 @@ import { addToTrip } from '../actions';
  class PopularDestinationItem extends Component {
      constructor(props) {
          super(props);
-         this.onAddTrip = this.onAddTrip.bind.this;
+         this.onAddTrip = this.onAddTrip.bind(this);
      }
 
      onAddTrip(item) {
-         this.props.addToTrip(item);
+         this.props.addToTrip;
      }
      render() {
         return(
@@ -31,7 +31,7 @@ import { addToTrip } from '../actions';
                             <div className="card__info-box">
                                 <p className="card__info-box">{this.props.details}</p>
                             </div>
-                            <span onClick="this.onAddTrip(this.props.data)" className="btn btn-white">Add to trip</span>
+                            <span onClick={this.onAddTrip(this.props.data)} className="btn btn-white">Add to trip</span>
                         </div>
                     </div>
                 </div>

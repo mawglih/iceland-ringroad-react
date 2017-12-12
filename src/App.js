@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import AboutIceland from './components/about-iceland';
 import Home from './components/home';
 import PopularDestinations from './components/popular-destinations';
@@ -13,11 +13,13 @@ class App extends Component {
     render() {
         return ( <div>
             <Navigation/>
-            <Route path="/" exact component={Home} />
-            <Route path="/about-iceland" component={AboutIceland} />
-            <Route path="/popular-destinations" component={PopularDestinations} />
-            <Route path="/success-stories" component={SuccessStories} />
-            <Route path="/your-bookings" component={YourBookings} />
+            <Switch>
+              <Route path="/about-iceland" component={AboutIceland} />
+              <Route path="/popular-destinations" component={PopularDestinations} />
+              <Route path="/success-stories" component={SuccessStories} />
+              <Route path="/your-bookings" component={YourBookings} />
+              <Route path="/" exact component={Home} />
+            </Switch>
             <Footer/>
 
             </div>
