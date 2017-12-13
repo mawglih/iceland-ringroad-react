@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import AboutIceland from './components/about-iceland';
+import AboutIceland from './container/about-iceland';
 import Home from './components/home';
 import PopularDestinations from './container/popular-destinations';
 import SuccessStories from './components/success-stories';
