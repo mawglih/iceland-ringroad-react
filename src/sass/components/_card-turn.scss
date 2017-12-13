@@ -4,6 +4,22 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
+    &__image {
+        max-height:20rem;
+        width: 100%;
+    }
+    &__text{
+        &-booking{
+            text-align: center;
+            color: $color-black;
+            padding: 2rem 1rem;
+        }
+        &-heading2 {
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+     
     &__side {
         height: 50rem;
         transition: all .8s ease;
