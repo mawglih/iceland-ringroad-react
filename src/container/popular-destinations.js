@@ -1,24 +1,17 @@
 import React, { Component } from 'react';
 import PopularDestinationItem from '../components/popular-destination-item';
 import { connect } from 'react-redux';
-import { addToTrip } from '../actions';
+import { selectedTrip } from '../actions';
 import { bindActionCreators } from 'redux';
 
 class PopularDestinations extends Component {
-    // handleAddToTrip(id, selectedTrip = null) {
-    //     for (let trip of this.props.destinations) {
-    //         if(id === trip.id) {
-    //             selectedTrip = trip;
-    //             console.log("Add to trip: ", selectedTrip);
-    //         }
-    //     }
-    //     return selectedTrip;
-    // }
+
     handleOnClick(item, selectedTrip = null) {
         console.log("popular item in parent: ", item);
         for(let trip of this.props.destinations) {
             if(item === trip.id) {
                 selectedTrip = trip;
+                this.props.selectedTrip(selectedTrip);                
                 console.log("Selected trip is: ", selectedTrip);
             }
         }
@@ -47,7 +40,7 @@ function mapStateToProps(state) {
     }
 }
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ addToTrip : addToTrip}, dispatch);
+    return bindActionCreators({ selectedTrip: selectedTrip}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PopularDestinations);
