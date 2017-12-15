@@ -38,6 +38,11 @@ class PopularDestinations extends Component {
     render() {
         return(
             <div className="section-popular-destinations">
+                <div className="u-margin-bottom-small u-center-text">
+                        <h2 className="heading-secondary">
+                            Popular destinations in Iceland
+                        </h2>
+                </div>
                 <div className="row">
                     {this.renderDestinations()}
                 </div>

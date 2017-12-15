@@ -22,7 +22,7 @@ class About extends Component {
                             <div className="composition">
                                 <img src="./images/pic1.jpg" className="composition__photo composition__photo--p1" alt="photo1"/>
                                 <img src="./images/pic2.jpg" className="composition__photo composition__photo--p2" alt="photo2"/>
-                                <img src="./images/pic4.jpg" className="composition__photo composition__photo--p4" alt="photo4"/>
+                                <img src="./images/pic3.jpg" className="composition__photo composition__photo--p4" alt="photo3"/>
                                 <img src="./images/pic4.jpg" className="composition__photo composition__photo--p3" alt="photo3"/>
                             </div>
                         </div>
