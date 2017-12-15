@@ -5,17 +5,28 @@ import { selectedTrip } from '../actions';
 import { bindActionCreators } from 'redux';
 
 class PopularDestinations extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            allTrips: []
+        }
+    }
 
     handleOnClick(item, selectedTrip = null) {
+        let myTrips = this.state.allTrips;
         console.log("popular item in parent: ", item);
         for(let trip of this.props.destinations) {
             if(item === trip.id) {
                 selectedTrip = trip;
-                this.props.selectedTrip(selectedTrip);                
-                console.log("Selected trip is: ", selectedTrip);
+                myTrips.push(selectedTrip);
+                this.setState({
+                    allTrips: myTrips
+                });
+                this.props.selectedTrip(this.state.allTrips);                
+                
             }
         }
-        return selectedTrip;
+        console.log("All trips are: ", this.state.allTrips);
     }
 
     renderDestinations() {

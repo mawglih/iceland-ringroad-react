@@ -7,7 +7,7 @@ class YourBookings extends Component {
     
 
     renderTrips() {
-        return this.props.allTrips.map((trip) => {
+        return this.props.selectedTrip.map((trip) => {
             return (
                 <YourBookingItem  key={trip.id} image={trip.image} name={trip.name} text={trip.textShort} description={trip.textLong}/>
             );
@@ -15,6 +15,9 @@ class YourBookings extends Component {
 
     }
     render() {
+        if(!this.props.selectedTrip) {
+            return <div>Select trips to get started</div>
+        }
         return ( 
             <div className="row">
                 {this.renderTrips()} 
@@ -25,7 +28,7 @@ class YourBookings extends Component {
 }
 function mapStateToProps(state) {
     return {
-        allTrips: state.allTrips
+        selectedTrip: state.selectedTrip
     }
 }
 
