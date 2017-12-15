@@ -2,7 +2,7 @@ import React from 'react';
 
 export default (props) => {
     return(
-        <div className="col-1-of-3">
+        <div className="col-1-of-4">
             <div className="card u-margin-bottom-small">
                 <div className="card__side">
                     <div >

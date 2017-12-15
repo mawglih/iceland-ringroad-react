@@ -16,7 +16,7 @@ class PopularDestinations extends Component {
         let myTrips = this.state.allTrips;
         console.log("popular item in parent: ", item);
         for(let trip of this.props.destinations) {
-            if(item === trip.id) {
+            if(item === trip.id && !myTrips.includes(trip)) {
                 selectedTrip = trip;
                 myTrips.push(selectedTrip);
                 this.setState({
@@ -31,7 +31,7 @@ class PopularDestinations extends Component {
 
     renderDestinations() {
         return this.props.destinations.map((trip) => {
-            return <PopularDestinationItem handleOnClick={e => this.handleOnClick(e)} key={trip.id} class={trip.id} image={trip.image} title={trip.name} text={trip.textShort} details={trip.textLong} />
+            return <PopularDestinationItem handleOnClick={e => this.handleOnClick(e)} key={trip.name} class={trip.id} image={trip.image} title={trip.name} text={trip.textShort} details={trip.textLong} />
         }); 
     }
 

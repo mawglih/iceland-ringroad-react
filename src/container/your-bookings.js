@@ -9,14 +9,14 @@ class YourBookings extends Component {
     renderTrips() {
         return this.props.selectedTrip.map((trip) => {
             return (
-                <YourBookingItem  key={trip.id} image={trip.image} name={trip.name} text={trip.textShort} description={trip.textLong}/>
+                <YourBookingItem  key={trip.name} image={trip.image} name={trip.name} text={trip.textShort} description={trip.textLong}/>
             );
         });
 
     }
     render() {
         if(!this.props.selectedTrip) {
-            return <div>Select trips to get started</div>
+            return <div>You did not make selection yet</div>
         }
         return ( 
             <div className="row">

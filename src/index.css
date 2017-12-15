@@ -385,11 +385,23 @@ body {
       .card__side--back-index-2 {
         background-image: linear-gradient(to right bottom, #053cf7, #05207b); }
       .card__side--back-index-3 {
-        background-image: linear-gradient(to right bottom, #e7a46d, #e97516); }
+        background-image: linear-gradient(to right bottom, #D435B2, #6D0D5A); }
       .card__side--back-index-4 {
-        background-image: linear-gradient(to right bottom, #85e76d, #48e620); }
+        background-image: linear-gradient(to right bottom, #e7a46d, #e97516); }
       .card__side--back-index-5 {
+        background-image: linear-gradient(to right bottom, #85e76d, #48e620); }
+      .card__side--back-index-6 {
         background-image: linear-gradient(to right bottom, #053cf7, #05207b); }
+      .card__side--back-index-7 {
+        background-image: linear-gradient(to right bottom, #D435B2, #6D0D5A); }
+      .card__side--back-index-8 {
+        background-image: linear-gradient(to right bottom, #e7a46d, #e97516); }
+      .card__side--back-index-9 {
+        background-image: linear-gradient(to right bottom, #85e76d, #48e620); }
+      .card__side--back-index-10 {
+        background-image: linear-gradient(to right bottom, #053cf7, #05207b); }
+      .card__side--back-index-11 {
+        background-image: linear-gradient(to right bottom, #D435B2, #6D0D5A); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -415,7 +427,23 @@ body {
     .card__picture-index-2 {
       background-image: linear-gradient(to right bottom, #053cf7, #05207b), url(./images/is-web/east_main-road.jpg); }
     .card__picture-index-3 {
-      background-image: linear-gradient(to right bottom, #e7a46d, #e97516), url(./images/is-web/east_main-road2.jpg); }
+      background-image: linear-gradient(to right bottom, #D435B2, #6D0D5A), url(./images/is-web/east_main-road2.jpg); }
+    .card__picture-index-4 {
+      background-image: linear-gradient(to right bottom, #e7a46d, #e97516), url(./images/is-web/skaly.jpg); }
+    .card__picture-index-5 {
+      background-image: linear-gradient(to right bottom, #85e76d, #48e620), url(./images/is-web/geyser.jpg); }
+    .card__picture-index-6 {
+      background-image: linear-gradient(to right bottom, #053cf7, #05207b), url(./images/is-web/gora_s_nosom.jpg); }
+    .card__picture-index-7 {
+      background-image: linear-gradient(to right bottom, #D435B2, #6D0D5A), url(./images/is-web/losh2.jpg); }
+    .card__picture-index-8 {
+      background-image: linear-gradient(to right bottom, #e7a46d, #e97516), url(./images/is-web/north_geyser.jpg); }
+    .card__picture-index-9 {
+      background-image: linear-gradient(to right bottom, #85e76d, #48e620), url(./images/is-web/north-fjords.jpg); }
+    .card__picture-index-10 {
+      background-image: linear-gradient(to right bottom, #053cf7, #05207b), url(./images/is-web/north-gullifoss.jpg); }
+    .card__picture-index-11 {
+      background-image: linear-gradient(to right bottom, #D435B2, #6D0D5A), url(./images/is-web/north-round-lake.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -442,7 +470,23 @@ body {
     .card__heading-span-index-2 {
       background-image: linear-gradient(to right bottom, rgba(5, 60, 247, 0.85), rgba(5, 32, 123, 0.85)); }
     .card__heading-span-index-3 {
+      background-image: linear-gradient(to right bottom, rgba(212, 53, 178, 0.85), rgba(109, 13, 90, 0.85)); }
+    .card__heading-span-index-4 {
       background-image: linear-gradient(to right bottom, rgba(231, 164, 109, 0.85), rgba(233, 117, 22, 0.85)); }
+    .card__heading-span-index-5 {
+      background-image: linear-gradient(to right bottom, rgba(133, 231, 109, 0.85), rgba(72, 230, 32, 0.85)); }
+    .card__heading-span-index-6 {
+      background-image: linear-gradient(to right bottom, rgba(5, 60, 247, 0.85), rgba(5, 32, 123, 0.85)); }
+    .card__heading-span-index-7 {
+      background-image: linear-gradient(to right bottom, rgba(212, 53, 178, 0.85), rgba(109, 13, 90, 0.85)); }
+    .card__heading-span-index-8 {
+      background-image: linear-gradient(to right bottom, rgba(231, 164, 109, 0.85), rgba(233, 117, 22, 0.85)); }
+    .card__heading-span-index-9 {
+      background-image: linear-gradient(to right bottom, rgba(133, 231, 109, 0.85), rgba(72, 230, 32, 0.85)); }
+    .card__heading-span-index-10 {
+      background-image: linear-gradient(to right bottom, rgba(5, 60, 247, 0.85), rgba(5, 32, 123, 0.85)); }
+    .card__heading-span-index-11 {
+      background-image: linear-gradient(to right bottom, rgba(212, 53, 178, 0.85), rgba(109, 13, 90, 0.85)); }
   .card__detail {
     padding: 3rem;
     margin: 0 auto; }
