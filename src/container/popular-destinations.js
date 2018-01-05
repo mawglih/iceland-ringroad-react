@@ -31,7 +31,7 @@ class PopularDestinations extends Component {
 
     renderDestinations() {
         return this.props.destinations.map((trip) => {
-            return <PopularDestinationItem handleOnClick={e => this.handleOnClick(e)} key={trip.name} class={trip.id} image={trip.image} title={trip.name} text={trip.textShort} details={trip.textLong} />
+            return <PopularDestinationItem handleOnClick={e => this.handleOnClick(e)} key={trip.name} class1={trip.id} image={trip.image} title={trip.name} text={trip.textShort} details={trip.textLong} />
         }); 
     }
 

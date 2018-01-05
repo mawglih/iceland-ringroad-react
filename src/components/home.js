@@ -11,23 +11,15 @@ class Home extends Component {
     render() {
         return ( < div >
 
-            <
-            Header / >
-            <
-            About / >
-            <
-            Features / >
-            <
-            Destinations / >
-            <
-            Testimonials / >
-            <
-            Booking / >
+            <Header />
+            <About />
+            <Features />
+            <Destinations />
+            <Testimonials />
+            <Booking />
 
-            <
-            PopUp / >
-            <
-            /div>
+            <PopUp />
+            </div>
         );
     }
 }
